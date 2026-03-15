@@ -1,19 +1,21 @@
 #include <iostream>
 using namespace std;
 int diagonalsum(int mat[][4],int n){
-    int sum=0;
+    //int sum=0;
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
             if(i==j){
-                sum+=mat[i][j];
+               // sum+=mat[i][j];
+            cout<<mat[i][j]<<" ";
 
             }
             else if(j==n-i-1){
-                sum+=mat[i][j];
+               // sum+=mat[i][j];
+               cout<<mat[i][j]<<" ";
             }
         }
     }
-    cout<<sum<<endl;
+   // cout<<sum<<endl;
 }
 
 int main() {

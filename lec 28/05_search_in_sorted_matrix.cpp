@@ -17,7 +17,7 @@ int main() {
                   {27,29,37,48},
                   {32,33,39,50} };
     int n=sizeof(matrix)/sizeof(matrix[0]);
-    searchmatrix(matrix,48,n);
+    searchmatrix(matrix,50,n);
     
     return 0;
 }

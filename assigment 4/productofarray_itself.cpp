@@ -24,7 +24,6 @@ int main() {
         output[i] = output[i] * right;
         right = right * arr[i];
     }
-
     for(int i = 0; i < n; i++) {
         cout << output[i] << " ";
     }

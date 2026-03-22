@@ -81,31 +81,106 @@
 //     return 0;
 // }
 
-#include <iostream>
-using namespace std;
-void  movezeroes(int arr[],int n){
-    int j=0;
-    for(int i=0;i<n;i++){
-        if(arr[i]!=0){
-            swap(arr[i],arr[j]);
-            j++;
+// #include <iostream>
+// using namespace std;
+// void  movezeroes(int arr[],int n){
+//     int j=0;
+//     for(int i=0;i<n;i++){
+//         if(arr[i]!=0){
+//             swap(arr[i],arr[j]);
+//             j++;
             
-        }
-    }
+//         }
+//     }
   
+// }
+
+// int main() {
+//     int n;
+//     cin>>n;
+//     int arr[n];
+//     for(int i=0;i<n;i++){
+//         cin>>arr[i];
+//     }
+//     movezeroes(arr,n);
+//     for(int i=0;i<n;i++){
+//         cout<<arr[i]<<" ";
+//     }
+
+//     return 0;
+// }
+
+// #include <iostream>
+// #include<algorithm>
+// #include<climits>
+// using namespace std;
+// void maxprofit(int price[],int n){
+//     int bestbuy[1000];
+//     bestbuy[0]=INT_MAX;
+//     for(int i=1;i<n;i++){
+//         bestbuy[i]=min(bestbuy[i-1],price[i-1]);
+//     }
+//     int maxprofit=0;
+//     for(int i=0;i<n;i++){
+//         int currprofit=price[i]-bestbuy[i];
+//         maxprofit=max(maxprofit,currprofit);
+//     }
+//         cout<<maxprofit<<endl;
+    
+
+// }
+
+// int main() {
+//     int n;
+//     cin>>n;
+//     int price[n];
+//     for(int i=0;i<n;i++){
+//         cin>>price[i];
+    
+//     }
+//     maxprofit(price,n);
+
+//     return 0;
+// }
+
+
+
+#include <iostream>
+#include<algorithm>
+using namespace std;
+bool containsdulpicate(int nums[],int n){
+    sort(nums,nums+n);
+    for(int i=1;i<n;i++){
+        
+            if(nums[i]==nums[i-1]){
+                return true;
+            }
+        
+    }
+    return false;
 }
 
 int main() {
     int n;
     cin>>n;
-    int arr[n];
+    int nums[n];
     for(int i=0;i<n;i++){
-        cin>>arr[i];
+        cin>>nums[i];
     }
-    movezeroes(arr,n);
-    for(int i=0;i<n;i++){
-        cout<<arr[i]<<" ";
-    }
+     cout<<containsdulpicate(nums,n);
 
+
+    
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+

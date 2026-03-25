@@ -8,7 +8,7 @@ int numSpecial(vector<vector<int>>& mat) {
     vector<int> row(n, 0);
     vector<int> col(m, 0);
 
-    // Step 1: count row & column
+    // count row & column
     for(int i = 0; i < n; i++){
         for(int j = 0; j < m; j++){
             if(mat[i][j] == 1){
@@ -18,15 +18,29 @@ int numSpecial(vector<vector<int>>& mat) {
         }
     }
 
-    // Step 2: check special positions
-    int ans = 0;
+    int count = 0;
+
+    
     for(int i = 0; i < n; i++){
         for(int j = 0; j < m; j++){
             if(mat[i][j] == 1 && row[i] == 1 && col[j] == 1){
-                ans++;
+                count++;
             }
         }
     }
 
-    return ans;
+    return count;
+}
+
+
+int main() {
+    vector<vector<int>> mat = {
+        {1,0,0},
+        {0,0,1},
+        {1,0,0}
+    };
+
+    cout << numSpecial(mat);
+
+    return 0;
 }

@@ -10,7 +10,7 @@ int removeElement(vector<int>& nums, int val) {
         }
     }
     return index;
-}
+  }
 int main() {
     vector<int> nums={1,2,3,4,5,6,6,6,7};
     int val=2;

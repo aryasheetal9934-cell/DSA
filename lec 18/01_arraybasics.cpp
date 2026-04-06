@@ -38,25 +38,32 @@
 //     return 0;
 // }
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
+// void printsubarr(int arr[],int n){
+//     for(int start=0;start<n;start++){
+//         for(int end=start;end<n;end++){
+//             for(int i=start;i<=end;i++){
+//                 cout<<arr[i];
+//             }
+//             cout<<",";
+            
+//         }
+//         cout<<endl;
+//     }
+// }
 
-int main() {
-    int n;
-    cin>>n;
-    int arr[n];
-    for(int i=0;i<n;i++){
-        cin>>arr[i];
-    }
-    int max=arr[0];
-    for(int i=0;i<n;i++){
-        if(arr[i]>max){
-            max=arr[i];
-   
-        }
-             cout<<max<<" ";
-        }
+// int main() {
+//     int n;
+//     cin>>n;
+//     int arr[n];
+//       for(int i=0;i<n;i++){
+//         cin>>arr[i];
+//     }
+//     printsubarr(arr,n);
+     
     
 
-    return 0;
-}
+//     return 0;
+// }
+

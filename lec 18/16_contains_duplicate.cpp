@@ -14,10 +14,16 @@ bool containduplicate(int arr[],int n){
 int main() {
     int n;
     cin>>n;
-    int arr[n];
+    int *arr=new int[n];
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-    cout<<containduplicate(arr,n);
+    if(containduplicate(arr,n)){
+        cout<<"true";
+
+    }
+    else{
+        cout<<"false";
+    }
     return 0;
 }

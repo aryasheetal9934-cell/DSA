@@ -10,5 +10,4 @@ int main() {
     string a="bccjewhui";
     string b="deeukudegue";
     cout<<findLUSlength(a,b)<<endl;
-    return 0;
-}
+    return 0;}

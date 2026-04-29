@@ -29,5 +29,4 @@ int main() {
     string a="101";
     string b="11";
     cout<<addBinary(a,b)<<endl;
-    return 0;
-}
+    return 0;}

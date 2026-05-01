@@ -26,5 +26,4 @@ int main() {
     vector<int> nums={1,3,5,6};
     int target=5;
     cout<<searchInsert(nums,target)<<endl;
-    return 0;
-}
+    return 0;}

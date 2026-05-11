@@ -42,5 +42,5 @@ int main() {
     int result = search(nums, target);
     cout << result << endl;
 
-    return 0;
+    return ;
 }
